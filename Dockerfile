@@ -1,4 +1,4 @@
-FROM docker:27.1.1-dind-alpine3.20
+FROM docker:27.2.1-dind-alpine3.20
 # hadolint ignore=DL3018
 RUN apk update && \
     apk add --no-cache xorriso git xz curl ca-certificates iptables cpio bash perl-utils \
