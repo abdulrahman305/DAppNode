@@ -104,7 +104,7 @@ if [[ -n "$STATIC_IP" ]]; then
         echo "The static IP provided: ${STATIC_IP} is not valid."
         exit 1
     fi
-fi
+}
 
 # Loads profile, if not exists it means it is script install so the versions will be fetched from the latest profile
 [ -f $DAPPNODE_PROFILE ] || ${WGET} -O ${DAPPNODE_PROFILE} ${PROFILE_URL}
